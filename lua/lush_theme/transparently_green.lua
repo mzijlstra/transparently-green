@@ -97,7 +97,7 @@ local theme = lush(function(injected_functions)
 		Folded         { fg = tg_dim }, -- Line used for closed folds
 		FoldColumn     { fg = tg_dim }, -- 'foldcolumn'
 		SignColumn     { fg = tg_dim }, -- Column where |signs| are displayed
-		IncSearch      { bg = tg_yellow, fg = tg_dark_yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+		IncSearch      { bg = tg_normal, fg = tg_dark }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 		Substitute     { bg = tg_dim, fg = tg_bright }, -- |:substitute| replacement text highlighting
 		LineNr         { fg = tg_dim }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 		LineNrAbove    { fg = tg_dim }, -- Line number for when the 'relativenumber' option is set, above the cursor line
@@ -126,7 +126,7 @@ local theme = lush(function(injected_functions)
 		PmenuThumb     { fg = tg_dim, bg = tg_dark_blue  }, -- Popup menu: Thumb of the scrollbar.
 		Question       { fg = tg_bright_blue }, -- |hit-enter| prompt and yes/no questions
 		QuickFixLine   { fg = tg_bright_blue }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-		Search         { bg = tg_dark_yellow, fg = tg_yellow }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+		Search         { bg = tg_normal, fg = tg_dark }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 		SpecialKey     { fg = tg_dim_blue }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
 		SpellBad       { fg = tg_dim, gui="underline" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 		SpellCap       { fg = tg_dim, gui="underline" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
